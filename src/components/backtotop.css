@@ -1,0 +1,44 @@
+.back-to-top {
+  /* Positioning: fixed to the bottom right of the screen */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  /* Button size and shape */
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensures it's on top of other content */
+  cursor: pointer;
+
+  /* The Glass Effect */
+  background-color: rgba(128, 0, 128, 0.2); /* Semi-transparent purple */
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+
+  /* Arrow styling */
+  color: #A020F0; /* Bright purple color for the arrow */
+  transform: translateY(200px); /* Initially hide the button below the screen */
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  opacity: 0;
+}
+
+.back-to-top svg {
+  width: 28px;
+  height: 28px;
+}
+
+.back-to-top.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.back-to-top:hover {
+  background-color: rgba(128, 0, 128, 0.4);
+  transform: scale(1.1); /* Subtle hover effect */
+}

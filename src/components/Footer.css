@@ -1,0 +1,116 @@
+/* General footer styling */
+footer {
+  background-color: #16001A;
+  color: #FBF5FF;
+  font-family: 'Poppins', sans-serif; /* Use a font that matches your brand */
+  padding: 0 0;
+  position: relative; /* For the top border effect */
+}
+
+/* Main container for layout */
+.footer-container {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Social icons section */
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.social-icons a {
+    color: #FBF5FF;
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+}
+
+/* Align brand-section and quick-links to the top */
+
+
+.social-icons a:hover {
+  color: #BF66CC;
+}
+
+/* Copyright and divider section */
+.copyright-section {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.divider {
+  border: none;
+  height: 1px;
+  background-color: #A020F0; /* The bright purple line from your image */
+  margin: 0 auto 10px;
+  max-width: 90%;
+}
+
+.copyright-section p {
+  font-size: 0.8em;
+  color: #8c7b8e;
+}
+
+
+.quicklinks {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: -24px;
+  margin-left: 180px;
+}
+
+.quicklinks h4 {
+  margin-bottom: 4px;
+  font-size: 18px;
+  color: #FBF5FF;
+}
+
+.quicklinks ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.quicklinks li {
+  margin-bottom: 8px;
+}
+
+.quicklinks a {
+  color: #FBF5FF;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.quicklinks a:hover {
+  color: #BF66CC;
+}
+
+
+
+
+/* For smaller screens, stack the content */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .quick-links, .social-icons {
+    margin-top: 20px;
+  }
+}

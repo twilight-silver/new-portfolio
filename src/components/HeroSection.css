@@ -1,0 +1,205 @@
+/* General Layout */
+.hero-section {
+  display: flex;
+  justify-content: center;
+  gap: -8rem;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 1rem;
+  min-height: 80vh;
+  height: 90vh;
+  overflow: hidden;
+}
+
+/* Left Side - Text */
+.hero-text {
+  width: 55%;
+}
+
+.hero-headline {
+  font-size: 50px;
+  color: #FBF5FF;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: -24px;
+  text-shadow: 0 0 70px rgba(251, 245, 255, 60%);
+    
+}
+
+.hero-headline-accent {
+  color: #FAEEC8;
+  font-style: italic;
+  text-shadow: 0 0 70px rgba(250, 238, 300, 60%);
+}
+
+.hero-subtext {
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 36px;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+}
+
+.s-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    height: 44px;
+    width: max-content;
+    border-radius: 24px;
+    outline: none;
+    /* border: 1px rgba(252, 233, 255, 0.2); */
+    background-color:rgba(191, 102, 204, 15%);
+    color: #FBF5FF;
+    font-weight: 500;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    backdrop-filter: blur(8px); 
+    border: 1px solid rgba(255, 255, 255, 0.1); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.s-button:hover {
+    background-color: rgba(191, 102, 204, 25%);
+    box-shadow: rgba(191, 102, 204, 0.3);
+    transform: translateY(-2px);
+}
+
+.s-button:active {
+    transform: translateY(1px);
+    box-shadow: rgba(191, 102, 204, 0.2);
+}
+
+/* Right Side - Pack of Cards */
+.hero-cards {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 438.11px;
+  width: 400px;
+}
+
+.hero-card {
+  position: absolute;
+  width: 250px;
+  height: 350px;
+  /* background-color: #2D0033; */
+  background: linear-gradient(180deg, #2d0033 0%, #0F0614 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  outline: 3px solid #FAEEC8;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  top: 10%;
+  left: 45%;
+  transform-origin: bottom center;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease, z-index 0.6s ease;
+}
+
+.hero-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+/* This creates the two sides of the card */
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* This hides the back of the card when not flipped */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Style for the back of the card */
+.card-back {
+  transform: rotateY(180deg);
+  flex-direction: column;
+  padding: 20px;
+  color: #FBF5FF;
+  background: linear-gradient(180deg, #2d0033 0%, #0F0614 100%);
+  border-radius: 16px;
+  outline: 3px solid #FAEEC8;
+}
+
+.card-back h3{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+
+.card-back p{
+    font-size: 14px;
+    margin-top: 8px;
+    font-family: "Nunito", sans-serif;
+    color: #FBF5FF;
+    line-height: 20px;
+    text-align: center;
+}
+
+.card-button{
+    margin-top: 16px;
+}
+
+/* The hover effect to bring the card to the front and flip it */
+.hero-card-left.hovered,
+.hero-card-center.hovered,
+.hero-card-right.hovered {
+  z-index: 10; /* Bring the hovered card to the top */
+  transform: rotateY(180deg) scale(1.1); /* Flip it on the Y-axis and slightly enlarge */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Positioning for each card */
+.hero-card-left {
+  transform: translateX(-200px) rotate(-8deg);
+  z-index: 1;
+}
+
+.hero-card-center {
+  transform: translateX(-35%) rotate(0deg);
+  z-index: 2;
+}
+
+.hero-card-right {
+  transform: translateX(20px) rotate(8deg);
+  z-index: 1;
+}
+
+.button-ctn{
+    display: flex;
+    gap: 16px;
+}
+
+@media (max-width: 768px) {
+  /* This targets the main container of your hero section */
+  .hero-section {
+    flex-direction: column; /* This makes the cards stack under the text */
+    gap: 40px; /* This creates the 40px gap you wanted */
+    align-items: center; /* This centers the items horizontally */
+    text-align: center; /* This centers the text */
+  }
+
+  /* This adjusts the text container for smaller screens */
+  .hero-content {
+    max-width: 100%;
+    margin-bottom: 0;
+  }
+}

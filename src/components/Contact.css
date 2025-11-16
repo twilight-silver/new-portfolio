@@ -1,0 +1,121 @@
+.contact{
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    height: max-content;
+    margin-bottom: 100px;
+}
+
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px;
+  height: 320px;
+  justify-content: center;
+  align-items: center;
+  background: rgba(26, 8, 22, 0.35);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(1.5px);
+  -webkit-backdrop-filter: blur(1.5px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 24px;
+}
+
+.contact-info {
+  height: 250px;
+}
+
+.contact-info p {
+  margin-bottom: 40px;
+  font-size: 16px;
+  line-height: 32px;
+  color: #ffffff;
+  font-family: "Nunito", sans-serif;
+}
+
+.socials {
+  display: flex;
+  gap: 20px; /* horizontal row again */
+}
+
+.socials a {
+  display: flex;
+  align-items: center;
+  color: #fbf5ff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.socials a svg {
+  width: 32px;
+  height: 32px;
+}
+
+.socials a:hover {
+  color: #bf66cc;
+}
+
+.contact-actions {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column; /* vertical buttons */
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.contact-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  height: 44px;
+  width: 300px;
+  border-radius: 24px;
+  outline: none;
+  border: none;
+  background-color: #faeec8;
+  color: #333;
+  font-weight: 500;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 5px rgba(247, 208, 138, 0.4);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.contact-btn:hover {
+  transform: translateY(-3px);
+  background-color: #f5da7e;
+}
+
+/* Responsive: side by side only on tablet/desktop */
+@media (min-width: 768px) {
+  .contact-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .contact-info {
+    flex: 2;
+  }
+
+  .contact-actions {
+    flex: 1;
+  }
+}

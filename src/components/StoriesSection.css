@@ -1,0 +1,112 @@
+.stories-section {
+  /* padding: 3rem 2rem; */
+  margin-top: 100px;
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 40px;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.headline-header{
+    text-align: center;
+    font-size: 28px;
+    line-height: 20px;
+    color: #BF66CC;
+    font-family: "Poppins", sans-serif;
+    text-shadow: 0 0 70px rgba(191, 102, 204, 60%);
+}
+
+.headline{
+  font-size: 50px;
+  line-height: 42px;
+  color: #FBF5FF;
+  font-family: "Poppins", sans-serif;
+  text-shadow: 0 0 70px rgba(251, 245, 255, 60%);
+  text-align: center;
+  margin-top: -8px;
+}
+
+.headline-accent{
+  color: #FAEEC8;
+  font-style: italic;
+  text-shadow: 0 0 70px rgba(250, 238, 300, 60%);
+}
+
+.stories-slider {
+  width: 100%;
+  padding-bottom: 40px;
+  /* Optional: Center the slider */
+  display: flex;
+  justify-content: center;
+}
+
+/* .stories-slider .swiper-slide {
+  width: 810px;
+} */
+
+/* We target the swiper slides that are not active */
+.stories-slider .swiper-slide:not(.swiper-slide-active) {
+  /* This applies a blur filter to the entire card */
+  filter: blur(3px);
+  /* You can also add a color overlay to make it darker */
+  /* background: rgba(0, 0, 0, 0.4); */
+  transition: all 0.3s ease-in-out;
+}
+
+/* We remove the filter when the user hovers over a blurred card */
+.stories-slider .swiper-slide:hover {
+  filter: none;
+}
+
+/* Ensure the navigation arrows are visible and styled */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #BF66CC;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  padding: 20px;
+}
+
+.swiperslide{
+    display: flex;
+}
+
+.custom-pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: -8px;
+    align-items: center;
+    width: 100%;
+}
+
+.custom-progress-bar {
+    background: rgba(255, 255, 255, 0.2);
+    height: 4px;
+    width: 200px; /* Adjust to desired length */
+    border-radius: 2px;
+    margin-right: 15px;
+}
+
+.custom-progress-fill {
+    height: 100%;
+    background-color: #BF66CC;
+    border-radius: 2px;
+    transition: width 0.3s ease;
+}
+
+.custom-pagination-text {
+    font-family: "Poppins", sans-serif;
+    color: #FBF5FF;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.separator {
+    margin: 0 4px;
+    color: rgba(255, 255, 255, 0.5);
+}

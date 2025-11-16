@@ -1,0 +1,50 @@
+.back-to-top-button {
+  /* Positioning and shape */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  cursor: pointer;
+
+  /* Glassmorphism effect */
+  background-color: rgba(128, 0, 128, 0.2);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+
+  /* Arrow styling */
+  color: #FBF5FF;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+
+  /* Hiding the button initially */
+  transform: translateY(100px);
+  opacity: 0;
+  pointer-events: none; /* Prevent interaction when hidden */
+}
+
+.back-to-top-button.show {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto; /* Allow interaction when visible */
+}
+
+.back-to-top-button.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.back-to-top-button:hover {
+  background-color: rgba(128, 0, 128, 0.4);
+}
+
+.back-to-top-button svg {
+  width: 28px;
+  height: 28px;
+}

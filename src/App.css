@@ -1,0 +1,19 @@
+body{
+  /* The color that acts as the base background */
+  background-color: #16001A;
+
+  /* This combines the transparent purple overlay and the image */
+  /* The first part is the linear gradient overlay */
+  /* The second part is the URL to your background pattern image */
+  background-image: linear-gradient(rgba(15, 6, 20, 0.1), rgba(15, 6, 20, 0.2)),
+                    url('C:\Users\Seniorita Dee\my-portfolio\src\assets\MacBook Pro 14_ - 1 (1).svg');
+
+  /* This ensures the image covers the entire screen */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+html {
+  scroll-behavior: smooth;
+}

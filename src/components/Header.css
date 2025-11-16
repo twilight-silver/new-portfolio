@@ -1,0 +1,92 @@
+/* Header.css */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+  background-color: transparent;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.nav-link {
+  color: #ccc; /* Inactive color */
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  margin: 0 15px;
+  position: relative;
+  transition: color 0.3s ease-in-out; /* Smooth transition for color */
+}
+
+/* Color change on hover for all links */
+.nav-link:hover {
+  color: #FBF5FF; 
+}
+
+/* The stroke that appears on hover and on the active link */
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #BF66CC;
+  bottom: -5px;
+  left: 0;
+  transition: width 0.3s ease-in-out;
+}
+
+/* The stroke for all links on hover */
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* The stroke for the active link (always visible) */
+.nav-link.active::after {
+  width: 100%;
+}
+
+/* Active link color (always visible and with the brighter color) */
+.nav-link.active {
+  color: #FBF5FF;
+}
+
+.logo img {
+    height: 52px;
+    width: auto;
+}
+
+.p-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    height: 44px;
+    width: max-content;
+    border-radius: 24px;
+    outline: none;
+    border: none;
+    background-color: #FAEEC8;
+    color: #333;
+    font-weight: 500;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 5px rgba(247, 208, 138, 0.4);
+}
+
+.p-button:hover {
+    background-color: #f5da7e;
+    /* box-shadow: 0 0 10px rgba(247, 208, 138, 0.6); */
+    transform: translateY(-1px);
+}
+
+.nav-button::after {
+  transform: scale(0.98);
+  transform: translateY(-1px);
+}
