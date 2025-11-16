@@ -22,7 +22,7 @@ function HeroSection({ scrollToSection }) {
     >
       {/* Front of the card */}
       <div className="card-front">
-        <img src="/src/assets/crown.svg" alt="crown" />
+        <img src="/public/assets/crown.svg" alt="crown" />
       </div>
 
       {/* Back of the card - THIS IS WHERE YOU ADD YOUR CONTENT */}

@@ -12,7 +12,7 @@ const AboutMe = ({id,scrollToSection}) => {
         <div className="aboutme-left">
             <div className="aboutme-image">
           <img
-            src="/src/assets/IMG-20250330-WA0004.jpg"
+            src="/public/assets/IMG-20250330-WA0004.jpg"
             alt="About Me"
           />
         </div>
