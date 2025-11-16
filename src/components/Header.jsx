@@ -8,7 +8,7 @@ function Header({scrollToSection}) {
     <header className="header">
       <div className="logo-section">
         <div className='logo'>
-            <img src="/public/assets/My logo.png" alt="Logo" />
+            <img src="/assets/My logo.png" alt="Logo" />
         </div>
       </div>
       <nav className="nav">
