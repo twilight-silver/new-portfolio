@@ -7,7 +7,7 @@ return (
     <footer>
         <div className="footer-container">
             <div className="brand-logo">
-                <img src="/src/assets/brand.png" alt="brand logo" />
+                <img src="/assets/brand.png" alt="brand logo" />
             </div>
             <div className="social-icons">
                 <a href="#"><FaInstagram /></a>

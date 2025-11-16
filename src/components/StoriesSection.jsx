@@ -13,28 +13,28 @@ function StoriesSection({id}) {
       id: 1,
       title: "My Portfolio",
       description: "A unique design philosophy , from a vibrant color story to subtle micro interactions guided the creation of this portfolio. The goal? To fully immerse the user in the experience itself. ",
-      image: "/src/assets/portfolio.jpg",
+      image: "/assets/portfolio.jpg",
       skills: ["Product Design", "UX Copy-writing"], // Added skills
     },
     {
       id: 2,
       title: "Elevating the Alumni Experience",
       description: "Addressing a common industry challenge: high user churn in alumni platforms. By focusing on intuitive design and new interactive features, the goal was to transform a static directory into a dynamic, living community.",
-      image: "/src/assets/buasac.jpg",
+      image: "/assets/buasac.jpg",
       skills: ["Product Design", "UX Copywritting"], // Added skills
     },
     {
       id: 3,
       title: "A case study in visiual storytelling",
       description: "Took on the challenge of transforming a traditional industry with modern design principles. The goal? To use visual storytelling and a clean user journey to build trust and make a direct-to-consumer model beautiful in its simplicity.",
-      image: "/src/assets/naijagro.png",
+      image: "/assets/naijagro.png",
       skills: ["Product Design", "UX Copywritting", "W.I.P"], // Added skills
     },
     {
       id: 4,
       title: "Re-imagining digital health experience",
       description: "Creating a calm and secure user experience leveraging color and copy to soothe anxiety. The core innovation was a hands-off emergency feature, designed to provide critical peace of mind when users need it most.",
-      image: "/src/assets/Zoeverse.jpg",
+      image: "/assets/Zoeverse.jpg",
       skills: ["Product Design", "UX Copywritting"], // Added skills
     },
   ];
